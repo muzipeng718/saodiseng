@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta description="">
+	<meta keywords="">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		var count=0;
+		var calCount;
+		function start(){
+			calCount=setInterval(function(){count1();},1000);
+			console.log(null instanceof Object);
+
+		}
+		function count1(){
+			var txt=document.getElementById("txt");
+			count++;
+			txt.value=count;
+		}
+		function stop(){
+			clearInterval(calCount);
+
+		}
+
+	</script>
+</head>
+<body>
+<div class="navbar navbar-inverse">
+	<div class="container-fluid">
+			<div class="navbar-header">
+				<div class="navbar-brand">
+					<small class="glyphicon glyphicon-fire"></small>
+					njust
+				</div>
+			</div>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#"><span class="glyphicon glyphicon-tasks"></span><i class="badge">8</i></a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-bell"></span><i class="badge">8</i></a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-envelope"></span><i class="badge">8</i></a></li>
+				<li>
+					<a href="#" data-toggle="dropdown" style="padding: 10px 0px">
+						<img src="images/1-small.jpg" width="50" class="img-circle"/>
+						<small>welcome</small>
+						Admin
+				
+				   </a>
+
+					<ul class="dropdown-menu">
+						<li><a href="#"><span class="glyphicon glyphicon-cog"></span>&nbsp;&nbsp;Setting</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;Profile</a></li>
+						<li><a href="#"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;Logout</a></li>
+				    </ul>
+				</li>
+			</ul>
+	</div>
+	
+</div>
+<div class="row">
+	<div class="col-sm-2">
+		<div id="search">
+			<div class="input-group">
+				<input class="form-control input-sm" type="text" />
+				<div class="input-group-btn">
+					<a href="#" class="btn btn-warning btn-sm">
+					<span class="glyphicon glyphicon-search"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	
+		<div class="panel-group ">
+		        <div class="panel panel-sucess">
+			  	<div class="panel-heading">
+					<a href="#collapseA"  data-toggle="collapse" class="panel-title">用户管理</a>
+				</div>
+				<div class="panel-collapse collapse in" id="collapseA">
+					<div class="panel-body">
+					  <ul class="nav nav-bills nav-stacked">
+						<li ><a href="#">用户列表</a></li>
+						<li><a href="#">用户添加</a></li>
+						<li><a href="#">用户删除</a></li>
+					  </ul>
+					</div>
+					
+				</div>
+			   
+		</div>
+		
+	</div>
+</div>
+<div class="col-sm-10">
+	<table class="table table-condensed">
+			<tr class="text-center">
+				<td class="danger">编号</td>
+				<td>新闻标题</td>
+				<td>发布者</td>
+				<td>发布时间</td>
+			</tr>
+		</table>
+	</div>
+	<div>
+		<button  type="button" class="btn btn-primary btn-sm" onclick="start()">计数</button>
+		<button type="button" class="btn btn-primary btn-sm" onclick="stop()">停止</button>
+
+		<input id="txt" type="text" name="">
+	</div>
+	<div>
+		<form class="form-inline">
+		    <div class="form-group">
+			<label for="username">用户名:</label>
+			<input type="text" class="form-control" name="" placeholder="请输入用户名">
+			</div>
+			 <div class="form-group">
+			<label for="password">密码:</label>
+			<input type="password" class="form-control" placeholder="请输入密码" name="">
+			</div>
+		</form>
+	</div>
+			
+</div>
+	<button  type="button" class="btn btn-sucess btn-sm">计数</button>
+	<p class="text-warning">dashdashdj</p>
+	<button type="button" class="btn btn-default">（默认样式）Default</button>
+	<button type="button" class="btn btn-primary">（首选项）Primary</button>
+</body>
+</html>

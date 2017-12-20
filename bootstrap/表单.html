@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta description="">
+	<meta keywords="">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css">
+	<script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		var count=0;
+		var calCount;
+		function start(){
+			calCount=setInterval(function(){count1();},1000);
+
+		}
+		function count1(){
+			var txt=document.getElementById("txt");
+			count++;
+			txt.value=count;
+		}
+		function stop(){
+			clearInterval(calCount);
+
+		}
+
+	</script>
+</head>
+<body style="padding: 50px;background: #ccc;">
+<div style="padding: 50px;background: #fff;">
+	<form class="form-horizontal">
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="username">用户名：</label>
+			<div class="col-md-10">
+			<input type="text" id="username" class="form-control" name="" placeholder="请输入用户名">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-2 control-label" for="password">密码：</label>
+			<div class="col-md-10">
+			<input type="password"  class="form-control" id="password" name="" placeholder="请输入密码">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-2 control-label" >上传文件：</label>
+			<div class="col-md-10">
+			<input type="file" name="">
+			<p class="help-block">上传的文件类型只能是：jpg、gif、bmp</p>
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-md-2 control-label">兴趣爱好：</label>
+			
+				<label class="checkbox-inline" ><input type="checkbox" name="">画画</label>
+				<label class="checkbox-inline" ><input type="checkbox" name="">体育</label>
+				<label class="checkbox-inline" ><input type="checkbox" name="">音乐</label>
+				<label class="checkbox-inline" ><input type="checkbox" name="">唱歌</label>
+			
+		</div>
+		<div class="form-group">
+			<label class="col-md-2 control-label">学历：</label>
+			
+				<label class="radio-inline" ><input type="radio" name="">博士</label>
+				<label class="radio-inline" ><input type="radio"" name="">研究生</label>
+				<label class="radio-inline" ><input type="radio"" name="">本科</label>
+				<label class="radio-inline" ><input type="radio"" name="">大专</label>
+			
+		</div>
+		<div class="form-group">
+			<label class="col-md-2 control-label">个人简介：</label>
+			<div class="col-md-10">
+			<textarea class="form-control" rows="5" placeholder="请输入你的相关信息"></textarea>
+			</div>
+		</div>
+		<div class="col-md-offset-2">		
+		<button class="btn btn-primary bt-sm">提交</button>
+		</div>
+
+	</form>
+</div>
+
+</body>
+</html>

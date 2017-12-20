@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta description="">
+	<meta keywords="">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="dist/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/myCss.css">
+	<script type="text/javascript" src="dist/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: #ccc;margin-top: 80px;">
+<div>
+<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+	<div class="container-fluid-my">
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand">Brand</a>
+			<p class="navbar-text">欢迎来访</p>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-left">
+				<li class="active"><a href="#">起步</a></li>
+				<li><a href="#">CSS全局样式</a></li>
+				<li><a href="#">组件</a></li>
+				<li><a href="#">插件</a></li>
+				<li><a href="#">网站案例</a></li>
+			</ul>
+			<form class="navbar-form navbar-left">
+				<input type="text" name="" class="form-control" placeholder="Search">
+				<button type="button" class="btn btn-success">搜索</button>
+			</form>
+			<form class="navbar-form navbar-right">
+				<button type="button" class="btn btn-success" role="button">登录</button>
+				<button type="button" class="btn btn-success" role="button">注册</button>
+			</form>
+		</div>
+	</div>
+</nav>
+</div>
+<div class="container" style="padding: 10px;background-color: #fff">
+   <h2 class="page-header">进度条</h2>
+   <div class="progress">
+		<div class="progress-bar progress-bar-danger progress-bar-striped active" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;">
+			60%
+		</div>
+		<div class="progress-bar progress-bar-info progress-bar-striped active" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:20%;">
+			20%
+		</div>
+
+   </div>
+   <h2 class="page-header">巨幕</h2>
+   <div class="jumbotron">
+		<h1>Hello, world!</h1>
+		<p>This is an simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+		<p><a href="#" class="btn btn-primary" role="button">Learn more</a></p>
+   </div>
+    <h2 class="page-header">标签页</h2>
+    <ul class="nav nav-pills nav-justified">
+    	<li role="presentation" class="active"><a href="#">Home</a></li>
+		<li role="presentation"><a href="#">Profile</a></li>
+		<li role="presentation"><a href="#">Message</a></li>
+    </ul>
+	<h2 class="page-header">作为额外元素的按钮式下拉菜单</h2>
+	<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" aria-label="...">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another action</a></li>
+          <li><a href="#">Something else here</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Separated link</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+	<h2 class="page-header">输入框组</h2>
+	<div class="input-group">
+		<span class="input-group-addon">@</span>
+		<input type="text" name="" class="form-control" placeholder="username">
+	</div><br>
+	<div class="input-group">
+		<input type="text" name="" class="form-control" placeholder="your email">
+		<span class="input-group-addon">@example.com</span>
+	</div>
+	<h2 class="page-header">下拉菜单</h2>
+	<div class="btn-group dropup">
+		<button class="btn btn-success" data-toggle="dropdown">Dropdown<span class="caret"></span></button>
+		<ul class="dropdown-menu">
+			<li><a href="#">Action</a></li>
+			<li><a href="#" >Another action</a></li>
+			<li><a href="#">Something else here</a></li>
+		</ul>
+	</div>
+	<h2 class="page-header">分页</h2>
+	<div class="text-center">
+		<ul class="pagination pagination-lg">
+			<li><a href="">&laquo;</li></a>
+			<li class="active"><a href="#" >1</li></a>
+			<li><a href="#">2</li></a>
+			<li><a href="#">3</li></a>
+			<li><a href="#">4</li></a>
+			<li><a href="#">5</li></a>
+			<li><a href="#">6</li></a>
+			<li><a href="#">7</li></a>
+			<li><a href="#">&raquo;</li></a>
+		</ul>
+	</div>
+	<h2 class="page-header">缩略图效果</h2>
+	<div>
+		<div class="col-md-4">
+			<a href="#"><img class="thumbnail" src="images/1-small.jpg"></a>
+			<div class="caption">
+			<h4>HTML入门</h4>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<a href="#"><img src="images/2-small.jpg"></a>
+			<div class="caption">
+			<h4>HTML入门</h4>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<a href="#"><img src="images/3-small.jpg"></a>
+			<div class="caption">
+			<h4>HTML入门</h4>
+			</div>
+		</div>
+	</div>
+	<h2 class="page-header">按钮组的应用</h2>
+	<div class="btn-toolbar">
+		<div class="btn-group">
+			<button type="button" class="btn btn-primary">left</button>
+			<button type="button" class="btn btn-primary">middle</button>
+			<button type="button" class="btn btn-primary">right</button>
+		</div>
+		<div class="btn-group">
+			<button type="button" class="btn btn-success">1</button>
+			<button type="button" class="btn btn-success">2</button>
+			<button type="button" class="btn btn-success">3</button>
+		</div>
+		<div class="btn-group">
+			<button type="button" class="btn btn-info">Top</button>
+			<button type="button" class="btn btn-info">bottom</button>
+			<button type="button" class="btn btn-info">medium</button>
+		</div>
+	</div>
+	<h2 class="page-header">下拉菜单</h2>
+	<div class="dropdown">
+		<button type="button" class="btn btn-sm btn-info" data-toggle="dropdown">PHP课程体系 <span class="caret"></span></button>
+		<ul class="dropdown-menu list-unstyled">
+			<li><a href="#">Html</a></li>
+			<li><a href="#">JavaScript</a></li>
+			<li class="divider"></li>
+			<li><a href="#">CSS</a></li>
+			<li><a href="#">Apache</a></li>
+		</ul>
+	</div>
+	<h2 class="page-header">图片浮动</h2>
+	<div class="clearfix bg-success" >
+		<ul class="list-unstyled">
+			<li class="pull-left" style="padding: 10px;">
+				<a href="#"><img src="images/2-small.jpg"></a><br>
+				<a href="#">美女1</a>
+			</li>
+			<li class="pull-left" style="padding: 10px;">
+				<a href="#"><img src="images/3-small.jpg"></a><br>
+				<a href="#">美女2</a>
+			</li>
+			<li class="pull-left" style="padding: 10px;">
+				<a href="#"><img src="images/4-small.jpg"></a><br>
+				<a href="#">美女3</a>
+			</li>
+		</ul>
+	</div>
+	<h2 class="page-header">图片样式应用</h2>
+	<div>
+
+		<img class="img-responsive img-rounded center-block" src="images/1.jpg">
+		<p>打火机时代精神是否符合就开始斯蒂芬金扣称霸世界的初步审查出版社出版出身不好吃吧从上半场不是减肥吧从十把穿金扇产生不成熟差别还是不错阿里和非哈里发安杰洛夫环境立法哈海盗路飞哈绝代风华就疯狂的加积分；啊</p>
+	</div>
+</div>
+	
+</body>
+</html>
